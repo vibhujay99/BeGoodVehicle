@@ -27,6 +27,8 @@ const FormPlates = ({ currentId, setCurrentId}) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    
+
     if(currentId){
         dispatch(updatePlates(currentId, platesData));
 
@@ -46,6 +48,14 @@ const FormPlates = ({ currentId, setCurrentId}) => {
         selectedFile: ''
     });
   }
+
+
+
+  
+    
+    //var vintage = /^([0-9]{1,2}\s[\u0DC1-\u0DD3]\s[0-9]{4})$/;
+    //var old = /^([0-9]{1,3}\s[0-9]{4})$/;
+    //var modern = /^(([A-Z]{1,2})\s([A-Z]{1,3})\s([0-9]{4}(?<!0{4}))$/;
 
   return(
     <Paper className = {classes.paper}>

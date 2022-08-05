@@ -14,12 +14,14 @@ const Plate = ({ plate, setCurrentId}) => {
     const classes = useStyles();
     const dispatch = useDispatch();
 
+
+    
   return (
     <Card className={classes.card}>
         <CardMedia className={classes.media} image={plate.selectedFile} title={plate.cusName} />
         <div className={classes.overlay}>
+            <Typography variant="h6">{plate.cusName}</Typography>
             <Typography variant="h6">{plate.vehiModel}</Typography>
-            <Typography variant="h6">{plate.plateNo}</Typography>
             <Typography variant="body2">{moment(plate.createdAt).fromNow()}</Typography>
         </div>
         <div className={classes.overlay2}>
@@ -29,7 +31,7 @@ const Plate = ({ plate, setCurrentId}) => {
             </div>
             
             <CardContent>
-                <Typography className={classes.vehiModel}  variant="h5" gutterBottom>{plate.plateNo}</Typography>
+                <Typography className={classes.title}  variant="h5" gutterBottom>{plate.plateNo}</Typography>
                 
             </CardContent>
             <CardActions className={classes.cardActions}>

@@ -21,11 +21,13 @@ export const createPlate = async (req, res) =>{
     const newPlate = new PlateMessage(plate);
 
     try {
+        
         await newPlate.save();
 
         res.status(201).json(newPlate);
     } catch (error) {
         res.status(409).json({ message: error.message });
+        
     }
 };
 
