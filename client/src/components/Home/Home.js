@@ -12,9 +12,7 @@ const Home = () => {
 
     const [currentId, setCurrentId] = useState(null);
     const dispatch = useDispatch();
- 
-    
-     
+  
     const classes = useStyles();
 
     useEffect(() => {
