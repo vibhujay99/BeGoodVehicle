@@ -14,8 +14,15 @@ const Plate = ({ plate, setCurrentId}) => {
     const classes = useStyles();
     const dispatch = useDispatch();
 
+    /*const validate = ({plate}) =>{
+        if(plate.plateNo ===/^([0-9]{1,3}\s[0-9]{4})$/){
+            return console.log("OLD");
+        }
+    };*/
 
-    
+    //var vintage = /^([0-9]{1,2}\s[\u0DC1-\u0DD3]\s[0-9]{4})$/;
+    //var old = /^([0-9]{1,3}\s[0-9]{4})$/;
+    //var modern = /^(([A-Z]{1,2})\s([A-Z]{1,3})\s([0-9]{4}(?<!0{4}))$/;
   return (
     <Card className={classes.card}>
         <CardMedia className={classes.media} image={plate.selectedFile} title={plate.cusName} />
@@ -39,6 +46,7 @@ const Plate = ({ plate, setCurrentId}) => {
                     <DeleteIcon fontSize="small"/>
                     Delete
                 </Button>
+                
             </CardActions>
     </Card>
   );

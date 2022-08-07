@@ -49,9 +49,6 @@ const FormPlates = ({ currentId, setCurrentId}) => {
     });
   }
 
-
-
-  
     
     //var vintage = /^([0-9]{1,2}\s[\u0DC1-\u0DD3]\s[0-9]{4})$/;
     //var old = /^([0-9]{1,3}\s[0-9]{4})$/;
